@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container container-form">
+        <div class="top">
+            <div class="div-nav">
+                <img src="assets/imgs/logo vector.png" alt="Logo Marca Ice Planet">
+            </div>
+            <nav class="menu">
+                <ul class="div-nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="">Sobre nós</a></li>
+                    <li><a href="">Monte seu sorvete</a></li>
+                    <li><a href="login.html">Login/Cadastre-se</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <form action="">
+            <h1 class="registration-title">Cadastro</h1>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" class="input-decoration" placeholder="Nome completo" required>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" class="input-decoration" placeholder="exemplo@correio.com.br" required>
+                <label for="">Sexo</label>
+                <div class="input-sex">
+                    <input type="radio" name="sex" id="fem" checked>
+                    <label for="fem">Feminino</label>
+                    <input type="radio" name="sex" id="mas">
+                    <label for="mas">Masculino</label>
+                </div>
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="cpf" class="input-decoration" placeholder="xxx.xxx.xxx-xx" required>
+                <label for="phone">Telefone</label>
+                <input type="tel" name="phone" id="phone" class="input-decoration" placeholder="(xx) xxxxx-xxxx" maxlength="14" minlength="14">
+                <label for="pronom">Como deseja ser chamado?</label>
+                <div class="input-pronom">
+                    <input type="radio" name="type-name" value="1" id="type-name1" checked>
+                    <label for="type-name1">Ela/Dela</label>
+                    <input type="radio" name="type-name" value="2" id="type-name2">
+                    <label for="type-name2">Ele/Dele</label>
+                    <input type="radio" name="type-name" value="3" id="type-name3">
+                    <label for="type-name3">Elo/Delo</label>
+                </div>
+                <label for="adress">Endereço de entrega</label>
+                <input class="input-decoration" type="text" name="adress" id="adress" placeholder="Rua quero frete grátis, nº 00">
+                <label for="bairro">Bairro</label>
+                <input class="input-decoration" type="text" name="bairro" id="bairro" placeholder="Free">
+            </fieldset>
+            <fieldset>
+                <legend>Dados Bancários</legend>
+                <label>Tipo do Cartão</label>                            
+                    <div class="radio-input">
+                        <input type="radio" name="tipo-cartao" value="1" id="tipo-credito" checked>
+                        <label for="tipo-credito">Crédito</label>
+                        <input type="radio" name="tipo-cartao" value="2" id="tipo-debito">
+                        <label for="tipo-debito">Débito</label>
+                    </div>
+                    <label for="cardNumber">Número do cartão</label>
+                    <input type="text" maxlength="19" minlength="19" class="input-decoration" placeholder="Ex: XXXX.XXXX.XXXX.XXXX" id="cardNumber" required>                                                       
+                    <label for="cardName">Nome do titular</label>
+                    <input type="text" class="input-decoration" placeholder="Nome do titular" id="cardName" required>                                                         
+                    <label for="securityCode">Código de segurança</label>
+                    <input type="text" maxlength="3" minlength="3" class="input-decoration" placeholder="Ex: XXX" id="securityCode" required>
+                    <div>
+                        <label>Vencimento</label>
+                        <div>
+                            <select name="select">
+                                <option value="">Mês</option>
+                                <option value="">01</option>
+                                <option value="">02</option>
+                                <option value="">03</option>
+                                <option value="">04</option>
+                                <option value="">05</option>
+                                <option value="">06</option>
+                                <option value="">07</option>
+                                <option value="">08</option>
+                                <option value="">09</option>
+                                <option value="">10</option>
+                                <option value="">11</option>
+                                <option value="">12</option>
+                            </select>
+                            <select name="select" id="">
+                                <option value="">Ano</option>
+                                <option value="">2023</option>
+                                <option value="">2024</option>
+                                <option value="">2025</option>
+                                <option value="">2026</option>
+                                <option value="">2027</option>
+                                <option value="">2028</option>
+                                <option value="">2029</option>
+                                <option value="">2030</option>
+                                <option value="">2031</option>
+                                <option value="">2032</option>
+                            </select>
+                        </div>
+                    </div>
+            </fieldset>
+            <input type="checkbox" name="newsletter" id="newsletter">
+            <label for="newsletter">Deseja receber promoções?</label>
+            <div class="btn-place">
+                <input class="btn btn-clean" type="reset" name="reset" value="Limpar">
+                <input class="btn btn-registration" type="submit" name="submit" value="Cadastrar">
+            </div>
+        </form>
+        <footer>
+            <p class="pFooter">Desenvolvido por: <a target="_blank" href="https://github.com/Joffre-Quintas"><i class="fa-brands fa-github"></i></a> Joffre Quintas e <a target="_blank" href="https://github.com/V1mendes"><i class="fa-brands fa-github"></i> Vitória Mendes </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/8354f4af5c.js" crossorigin="anonymous"></script>
+</body>
+</html>

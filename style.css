@@ -20,13 +20,15 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 100vw;
+    width: 98.9vw;
     height: 100vh;
+    color: #555555;
 }
 .top{
     display: flex;
     justify-content: space-between;
     background-color: white;
+    width: 100%;
     height: 70px;
     align-items: center;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.222);
@@ -40,6 +42,9 @@ body{
 }
 .menu ul li{
     padding: 7px 10px;
+}
+.menu ul li:hover{
+    transform: scale(1.1);
 }
 .menu ul li:last-child{
     background-color: #415fe3;
@@ -73,10 +78,10 @@ body{
 .h1-index{
     font-size: 2.3em;
     font-weight: bolder;
+    color: black;
 }
 .h2-index{
     font-size: 1.5em;
-    color: #555555;
 }
 .btn{
     padding: 10px 7px;
@@ -94,33 +99,118 @@ body{
 }
 .icecream-picture{
     text-align: right;
-    margin-top: 10px;
+    margin-top: 10px;    
 }
 .icecream-picture img{
     width: 1000px;
 }
 .animate-templates{
-    margin-top: 4em;
+    margin-top: 10em;
     display: flex;
     justify-content: space-around;
 }
 .template{
     position: relative;
-    height: 500px;
+    height: 600px;
     width: 400px;
-    border: 1px solid black;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.277);
+}
+.img-template{
+    width: 400px;
+    height: 600px;
 }
 .text-template{
     position: absolute;
-    top: 95%;
+    top:3%;
     left: 50%;
     transform: translateX(-50%);
     transition: 0.5s;
     width: 398px;
     text-align: center;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
-    -webkit-backdrop-filter: blur(10px);  
+    background-color: #36363614;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
 }
+
 footer{
+    margin-top: 3em;
+    text-align: center;
+    font-size: 14px;
+}
+/*Cadastro*/
+.registration-title{
     text-align: center;
 }
+form{
+    width: fit-content;
+    background-color: white;
+    margin: auto;
+    padding: 20px 30px;
+    margin-top: 4em;
+    border-radius: 20px;
+}
+form fieldset{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    row-gap: 5px;
+    margin-bottom: 10px;
+}
+legend{
+    font-weight: bolder;
+}
+.input-decoration{
+    padding: 3px 0px 3px 5px;
+    border: 1px solid black;
+    border-radius: 14px;
+}
+.btn-place{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.btn-place *{
+    border: none;
+    cursor: pointer;
+}
+.btn-clean{
+    background-color: rgb(247, 108, 108);
+}
+.btn-clean:hover{
+    background-color:rgb(242, 41, 41) ;
+}
+
+/*Login*/
+.login{
+    width: 400px;
+    height: auto;
+    background-color: white;
+    margin: 4em auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    row-gap: 5px;
+}
+.title-login{
+    margin: 10px auto 80px auto;
+}
+.input-user, .input-password{
+    width: 100%;
+    padding: 5px 0px 5px 40px;
+}
+.anchors-login{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.btn-login{
+    margin-top: 20px;
+    border: none;
+}
+
+
+
