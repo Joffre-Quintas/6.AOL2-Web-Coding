@@ -200,16 +200,60 @@ legend{
 }
 .input-user, .input-password{
     width: 100%;
-    padding: 5px 0px 5px 40px;
+    padding: 5px 0px 5px 30px;
+    outline: none;
+}
+.login div{
+    position: relative;
+}
+.fa-user, .fa-lock{
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    color: #f6529c;
 }
 .anchors-login{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
+.anchors-login a:hover{
+    scale: 1.1;
+}
 .btn-login{
     margin-top: 20px;
     border: none;
+    cursor: pointer;
+}
+/*About*/
+.about{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+}
+.title-about{
+    color: black;
+}
+.p-about{
+    font-size: 1.2em;
+    font-weight: 600;
+    text-indent: 20px;
+    margin: 20px 0px;
+}
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+table td{
+    text-align: center;
+}
+table *{
+    border: 1px solid black;
+    padding: 10px;
+}
+.quiosque{
+    width: 770px;
 }
 
 
