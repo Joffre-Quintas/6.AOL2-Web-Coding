@@ -114,3 +114,15 @@ menta2.addEventListener('change', changeToMenta2 = () =>{
 caramelo2.addEventListener('change', changeToCaramelo2 = () =>{
     imgSecondBall.src = "assets/imgs/bola2-caramelo.png"
 })
+
+let finish = () =>{
+    if(oneBall.checked){
+        total = 10
+    }else if(twoBall.checked = 18){
+        total = 18
+    }
+    if(document.getElementById('delivery').checked){
+        total += 10
+    }
+    alert(`Pedido solicitado com sucesso! O valor foi de R$${total},00.`)
+}

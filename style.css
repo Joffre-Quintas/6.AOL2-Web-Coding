@@ -334,4 +334,12 @@ button{
 .second-choice{
     opacity: 0;
 }
+#total{
+    text-align: center;
+    margin-top: 2em;
+}
+.input-delivery{
+    display: flex;
+    gap: 2.5em;
+}
 
