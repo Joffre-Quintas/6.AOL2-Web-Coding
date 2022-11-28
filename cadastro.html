@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Cadastro</title>
+    <title>Ice Planet - Cadastro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,19 +18,21 @@
             <nav class="menu">
                 <ul class="div-nav">
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="sobre.html">Sobre nós</a></li>
+                    <li><a href="about.html">Sobre nós</a></li>
                     <li><a href="">Monte seu sorvete</a></li>
                     <li><a href="login.html">Login/Cadastre-se</a></li>
                 </ul>
             </nav>
         </div>
         
-        <form action="">
+        <form name="form-registration" action="sucessfullRegistration.html">
             <h1 class="registration-title">Cadastro</h1>
             <fieldset>
                 <legend>Dados Pessoais</legend>
                 <label for="name">Nome</label>
                 <input type="text" name="name" id="name" class="input-decoration" placeholder="Nome completo" required>
+                <label for="password">Senha</label>
+                <input type="password" class="input-decoration" placeholder="Digite sua senha" required>
                 <label for="email">E-mail</label>
                 <input type="email" name="email" id="email" class="input-decoration" placeholder="exemplo@correio.com.br" required>
                 <label for="">Sexo</label>
@@ -119,7 +121,6 @@
         </footer>
     </div>
 
-    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/8354f4af5c.js" crossorigin="anonymous"></script>
 </body>
 </html>

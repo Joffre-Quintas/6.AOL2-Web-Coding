@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Planete - Monte seu Sorvete</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon/favicon.ico">
+</head>
+<body onload="Hello()">
+    <div class="container">
+        <div class="top">
+            <div class="div-nav">
+                <img src="assets/imgs/logo vector.png" alt="Logo Marca Ice Planet">
+            </div>
+            <nav class="menu">
+                <ul class="div-nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Sobre nós</a></li>
+                    <li><a href="">Monte seu sorvete</a></li>
+                    <li><a href="login.html">Login/Cadastre-se</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1 id="visit"></h1>
+        <div class="content-icecream-build">
+            <div class="icecream-select">
+                <img class="img-ajust-size" src="assets/imgs/bola2-displayNone.png" alt="Bola de Sorvete 2" id="imgSecondBall">
+                <img class="img-ajust-size" src="assets/imgs/bola1-ref.png" alt="Bola de Sorvete 1" id="imgFirstBall">
+                <img class="img-ajust-size" src="assets/imgs/casquinho-montagem.png" alt="Casquinho">
+            </div>
+            <div class="div-menu">
+                <div class="first-choice">
+                    <p class="ask">Você deseja 1 ou 2 bolas de sorvete?</p>
+                    <div class="price">
+                        <div>
+                            <input type="radio" name="qt-choice" id="oneBall" checked>
+                            <label for="oneBall">1 Bola - R$10,00</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="qt-choice" id="twoBall">
+                            <label for="twoBalls">2 Bolas - R$18,00</label>
+                        </div>
+                    </div>
+                    <p class="ask">Qual o sabor da primeira bola?</p>
+                    <div class="layout-flavor">
+                        <div>
+                            <div>
+                                <input type="radio" name="first-flavor" id="caja">
+                                <label for="">Caja</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="first-flavor" id="graviola">
+                                <label for="">Graviola</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="first-flavor" id="goiaba">
+                                <label for="">Goiaba</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="first-flavor" id="maracuja">
+                                <label for="">Maracujá</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="first-flavor" id="acai">
+                                <label for="">Açaí</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <input type="radio" name="first-flavor" id="morango">
+                                <label for="">Morango</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="first-flavor" id="chocolate">
+                                <label for="">Chocolate Belga</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="first-flavor" id="chocolateb">
+                                <label for="">Chocolate com Brownie</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="first-flavor" id="menta">
+                                <label for="">Menta</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="first-flavor" id="caramelo">
+                                <label for="">Caramelo</label>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="second-choice" id="second-choice">
+                    <p class="ask">Qual o sabor da segunda bola?</p>
+                    <div class="layout-flavor">
+                        <div>
+                            <div>
+                                <input type="radio" name="second-flavor"id="caja2">
+                                <label for="">Caja</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="second-flavor" id="graviola2">
+                                <label for="">Graviola</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="second-flavor" id="goiaba2">
+                                <label for="">Goiaba</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="second-flavor" id="maracuja2">
+                                <label for="">Maracujá</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="second-flavor" id="acai2">
+                                <label for="">Açaí</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <input type="radio" name="second-flavor" id="morango2">
+                                <label for="">Morango</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="second-flavor" id="chocolate2">
+                                <label for="">Chocolate Belga</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="second-flavor" id="chocolateb2">
+                                <label for="">Chocolate com Brownie</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="second-flavor" id="menta2">
+                                <label for="">Menta</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="second-flavor" id="caramelo2">
+                                <label for="">Caramelo</label>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="btn-icrecream-build">
+                    <button class="btn" type="submit">Retirar na loja</button>
+                    <button class="btn" type="submit">Delivery</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="icecreambuild.js"></script>
+</body>
+</html>

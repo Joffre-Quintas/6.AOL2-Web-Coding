@@ -1,3 +1,6 @@
+const cookies = () =>{
+    confirm('Esta página utiliza-se de cookies para o seu funcionamento. Você esta de acordo em fornecer seus dados?')
+}
 const imgAnimateIcecream = document.getElementById('icecreamAnimate')
 
 function buildIcecream(){
@@ -9,4 +12,4 @@ function emptyIcecream(){
 imgAnimateIcecream.addEventListener('mouseover', buildIcecream )
 imgAnimateIcecream.addEventListener('mouseout', emptyIcecream)
 
-   
+
